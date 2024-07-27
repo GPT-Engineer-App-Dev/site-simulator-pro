@@ -1,13 +1,16 @@
 import { NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Rocket } from "lucide-react";
 
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between p-4 bg-[#1e1e1e] text-white">
       <div className="flex items-center space-x-6">
-        <NavLink to="/" className="flex items-center space-x-2">
-          <Rocket className="h-6 w-6" />
+        <NavLink to="/" className="flex items-center space-x-2 group">
+          <img 
+            src="https://neetcode.io/assets/neetcode-io-logo.png" 
+            alt="NeetCode Logo" 
+            className="h-8 w-8 transition-transform duration-300 ease-in-out group-hover:rotate-15"
+          />
           <span className="text-xl font-bold">NeetCode</span>
         </NavLink>
         <NavLink to="/courses" className="hover:text-gray-300">Courses</NavLink>
